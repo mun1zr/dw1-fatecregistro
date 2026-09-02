@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELA ZEBRADA</title>
+    <!-- Css interno: utilização dentro do próprio HTML. É inserido dentro da tag <head> -->
+        <style>
+            /* odd : impar */
+            tr :nth-child(odd){
+                background-color: #e8eef1;
+            }
+            /* even : par */
+              tr :nth-child(even){
+                background-color: #c9daee;
+            }
+        </style>
+</head>
+<body>
+    <!-- Tabela zebrada -->
+     <table border="1">
+           <thead>
+        <tr>
+            <th colspan="6">
+                <h3>Tabela de clientes</h3>
+            </th>
+        </tr>
+        <th scope="col" colspan="3">Dados pessoais:</th>
+        <th scope="col" colspan="2">Endereço:</th>
+        <th scope="col">Contato:</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="col">Nome:</th>
+            <th scope="col">Idade:</th>
+            <th scope="col">Profissão</th>
+            <!-- Endereço -->
+             <th scope="col">Rua</th>
+             <th>Cidade:</th>
+             <!-- Contato -->
+             <th scope="col">E-mail:</th>
+           </tr>
+           <tr>
+            <td>Ana de Souza Pereira	</td>
+            <td>25</td>
+            <td>Engenharia</td>
+            <td>Avenida A</td>
+            <td>São Paulo</td>
+            <td>ana.pereira@email.com</td>
+           </tr>
+           <tr>
+             <td>João Carlos de Almeida	</td>
+            <td>28</td>
+            <td>Engenharia Elétrica</td>
+            <td>Avenida B</td>
+            <td>São Caetano</td>
+            <td>joao.almeida@email.com</td>
+           </tr>
+    </tbody>
+     </table>
+   
+</body>
+</html>

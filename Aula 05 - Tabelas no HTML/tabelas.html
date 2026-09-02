@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+</head>
+<body>
+    <H1>Tabelas no HTML:</H1>
+    <!-- Estrutura m,ínima de uma tabela -->
+     <table border="1">
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+     </table>
+     <!-- br:break line (quebra de linha) -->
+      <br><br><br>
+     <!-- Exemolo de tabela completa (com mesclagem) -->
+      <table border="1">
+        <caption>Vendas do mês:</caption>
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <!-- Corpo da tabela -->
+         <tbody>
+        <tr>
+<td rowspan="2">Mouse</td>
+            <td>10</td>
+            <td>R$500,00</td>
+        </tr>
+        <td>20</td>
+        <td>R$1.000,00</td>
+         </tbody>
+         <!-- Rodapé -->
+          <tfoot>
+            <tr>
+                <!-- colspan mescla colunas -->
+               <th colspan="2">Total</th>
+            <td>R$1.500,00</td>
+             </tr>
+          </tfoot>
+      </table>
+      <!-- Tabela completa com o atributo "scope" -->
+    
+       <br><br><br>
+      <table border="1">
+        <caption>Notas dos alunos por disciplinas:</caption>
+        <thead>
+            <tr>
+                <th scope="col">Aluno</th>
+                <th scope="col">Matemática</th>
+                <th scope="col">Português</th>
+                <th scope="col">História</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linha 1 Ryan-->
+             <tr>
+                <th scope="row">Ryan</th>
+                <td >8.5</td>
+                <td>10</td>
+                <td>8</td>
+             </tr>
+             <!-- Linah 2 João Eduardo -->
+             <tr>
+                <th scope="row">João Eduardo</th>
+                <td >8</td>
+                <td>9</td>
+                <td>10</td>
+             </tr>
+             <!--  Linha 3 Francis -->
+             <tr>
+                <th scope="row">Francis</th>
+                <td >9</td>
+                <td>10</td>
+                <td>7.5</td>
+             </tr>
+        </tbody>
+       </table>
+</body>
+</html>
